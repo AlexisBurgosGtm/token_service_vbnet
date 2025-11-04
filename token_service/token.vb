@@ -9,6 +9,10 @@ Public Class token
         TimerToken.Start()
         TimerConteo.Start()
 
+        Call cargar_conexion_archivo()
+
+
+
     End Sub
 
 
@@ -23,8 +27,6 @@ Public Class token
 
     Private Sub cambiar_claves()
 
-
-
         Dim rand As New Random()
 
         Try
@@ -37,7 +39,17 @@ Public Class token
             Dim clave_7 As Integer = rand.Next(700, 999999)
             Dim clave_8 As Integer = rand.Next(800, 999999)
             Dim clave_9 As Integer = rand.Next(900, 999999)
-            Dim clave_10 As Integer = rand.Next(1, 999999)
+            Dim clave_10 As Integer = rand.Next(1000, 999999)
+            Dim clave_11 As Integer = rand.Next(150, 999999)
+            Dim clave_12 As Integer = rand.Next(250, 999999)
+            Dim clave_13 As Integer = rand.Next(350, 999999)
+            Dim clave_14 As Integer = rand.Next(450, 999999)
+            Dim clave_15 As Integer = rand.Next(550, 999999)
+            Dim clave_16 As Integer = rand.Next(650, 999999)
+            Dim clave_17 As Integer = rand.Next(750, 999999)
+            Dim clave_18 As Integer = rand.Next(850, 999999)
+            Dim clave_19 As Integer = rand.Next(950, 999999)
+            Dim clave_20 As Integer = rand.Next(1050, 999999)
 
 
             Me.LB_CLAVE_1.Text = get_string_clave(clave_1)
@@ -83,7 +95,8 @@ Public Class token
     Private Sub TimerConteo_Tick(sender As Object, e As EventArgs) Handles TimerConteo.Tick
 
         contador = contador + 1
-        Me.lbTimer.Text = contador
+        Dim faltan As Integer = 60 - contador
+        Me.lbTimer.Text = faltan
         If contador = 60 Then contador = 0
 
     End Sub
