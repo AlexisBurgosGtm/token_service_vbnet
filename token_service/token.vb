@@ -63,6 +63,15 @@ Public Class token
             Me.LB_CLAVE_9.Text = get_string_clave(clave_9)
             Me.LB_CLAVE_10.Text = get_string_clave(clave_10)
 
+            If update_clave_host(GlobalEmpnit, Me.LB_CLAVE_1.Text, Me.LB_CLAVE_2.Text, Me.LB_CLAVE_3.Text, Me.LB_CLAVE_4.Text, Me.LB_CLAVE_5.Text) = True Then
+                If update_clave_general(GlobalEmpnit, Me.LB_CLAVE_1.Text) = True Then
+
+                Else
+
+                End If
+            Else
+
+                End If
 
         Catch ex As Exception
 
@@ -100,4 +109,8 @@ Public Class token
         If contador = 60 Then contador = 0
 
     End Sub
+
+
+
+
 End Class

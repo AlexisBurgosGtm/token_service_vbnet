@@ -35,7 +35,6 @@ Partial Class token
         Me.LB_CLAVE_8 = New System.Windows.Forms.Label()
         Me.LB_CLAVE_9 = New System.Windows.Forms.Label()
         Me.LB_CLAVE_10 = New System.Windows.Forms.Label()
-        Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.lbTimer = New System.Windows.Forms.Label()
         Me.TimerConteo = New System.Windows.Forms.Timer(Me.components)
         Me.Label1 = New System.Windows.Forms.Label()
@@ -50,7 +49,29 @@ Partial Class token
         Me.Label10 = New System.Windows.Forms.Label()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
         Me.Label11 = New System.Windows.Forms.Label()
+        Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.Label12 = New System.Windows.Forms.Label()
+        Me.Label13 = New System.Windows.Forms.Label()
+        Me.Label14 = New System.Windows.Forms.Label()
+        Me.Label15 = New System.Windows.Forms.Label()
+        Me.Label16 = New System.Windows.Forms.Label()
+        Me.Label17 = New System.Windows.Forms.Label()
+        Me.Label18 = New System.Windows.Forms.Label()
+        Me.Label19 = New System.Windows.Forms.Label()
+        Me.Label20 = New System.Windows.Forms.Label()
+        Me.Label21 = New System.Windows.Forms.Label()
+        Me.Label22 = New System.Windows.Forms.Label()
+        Me.Label23 = New System.Windows.Forms.Label()
+        Me.Label24 = New System.Windows.Forms.Label()
+        Me.Label25 = New System.Windows.Forms.Label()
+        Me.Label26 = New System.Windows.Forms.Label()
+        Me.Label27 = New System.Windows.Forms.Label()
+        Me.Label28 = New System.Windows.Forms.Label()
+        Me.Label29 = New System.Windows.Forms.Label()
+        Me.Label30 = New System.Windows.Forms.Label()
+        Me.Label31 = New System.Windows.Forms.Label()
         Me.GroupBox2.SuspendLayout()
+        Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
         '
         'TimerToken
@@ -61,7 +82,7 @@ Partial Class token
         '
         Me.LB_CLAVE_1.AutoSize = True
         Me.LB_CLAVE_1.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LB_CLAVE_1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.LB_CLAVE_1.ForeColor = System.Drawing.Color.Red
         Me.LB_CLAVE_1.Location = New System.Drawing.Point(234, 36)
         Me.LB_CLAVE_1.Name = "LB_CLAVE_1"
         Me.LB_CLAVE_1.Size = New System.Drawing.Size(90, 15)
@@ -167,21 +188,12 @@ Partial Class token
         Me.LB_CLAVE_10.TabIndex = 9
         Me.LB_CLAVE_10.Text = "LB_CLAVE_10"
         '
-        'GroupBox1
-        '
-        Me.GroupBox1.Location = New System.Drawing.Point(515, 12)
-        Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(303, 387)
-        Me.GroupBox1.TabIndex = 10
-        Me.GroupBox1.TabStop = False
-        Me.GroupBox1.Text = "Parametros"
-        '
         'lbTimer
         '
         Me.lbTimer.AutoSize = True
         Me.lbTimer.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lbTimer.ForeColor = System.Drawing.Color.Red
-        Me.lbTimer.Location = New System.Drawing.Point(410, 402)
+        Me.lbTimer.Location = New System.Drawing.Point(409, 19)
         Me.lbTimer.Name = "lbTimer"
         Me.lbTimer.Size = New System.Drawing.Size(14, 13)
         Me.lbTimer.TabIndex = 11
@@ -196,32 +208,32 @@ Partial Class token
         Me.Label1.AutoSize = True
         Me.Label1.Location = New System.Drawing.Point(20, 355)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(39, 13)
+        Me.Label1.Size = New System.Drawing.Size(49, 13)
         Me.Label1.TabIndex = 21
-        Me.Label1.Text = "Label1"
+        Me.Label1.Text = "Clave 10"
         '
         'Label2
         '
         Me.Label2.AutoSize = True
         Me.Label2.Location = New System.Drawing.Point(20, 321)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(39, 13)
+        Me.Label2.Size = New System.Drawing.Size(43, 13)
         Me.Label2.TabIndex = 20
-        Me.Label2.Text = "Label2"
+        Me.Label2.Text = "Clave 9"
         '
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(20, 283)
+        Me.Label3.Location = New System.Drawing.Point(20, 36)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(39, 13)
+        Me.Label3.Size = New System.Drawing.Size(98, 13)
         Me.Label3.TabIndex = 19
-        Me.Label3.Text = "Label3"
+        Me.Label3.Text = "CLAVE GENERAL:"
         '
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(20, 250)
+        Me.Label4.Location = New System.Drawing.Point(20, 283)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(181, 13)
         Me.Label4.TabIndex = 18
@@ -230,7 +242,7 @@ Partial Class token
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(20, 216)
+        Me.Label5.Location = New System.Drawing.Point(20, 249)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(176, 13)
         Me.Label5.TabIndex = 17
@@ -239,7 +251,7 @@ Partial Class token
         'Label6
         '
         Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(20, 182)
+        Me.Label6.Location = New System.Drawing.Point(20, 215)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(144, 13)
         Me.Label6.TabIndex = 16
@@ -248,7 +260,7 @@ Partial Class token
         'Label7
         '
         Me.Label7.AutoSize = True
-        Me.Label7.Location = New System.Drawing.Point(20, 146)
+        Me.Label7.Location = New System.Drawing.Point(20, 179)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(138, 13)
         Me.Label7.TabIndex = 15
@@ -257,7 +269,7 @@ Partial Class token
         'Label8
         '
         Me.Label8.AutoSize = True
-        Me.Label8.Location = New System.Drawing.Point(20, 109)
+        Me.Label8.Location = New System.Drawing.Point(20, 142)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(139, 13)
         Me.Label8.TabIndex = 14
@@ -266,7 +278,7 @@ Partial Class token
         'Label9
         '
         Me.Label9.AutoSize = True
-        Me.Label9.Location = New System.Drawing.Point(20, 70)
+        Me.Label9.Location = New System.Drawing.Point(20, 103)
         Me.Label9.Name = "Label9"
         Me.Label9.Size = New System.Drawing.Size(133, 13)
         Me.Label9.TabIndex = 13
@@ -275,7 +287,7 @@ Partial Class token
         'Label10
         '
         Me.Label10.AutoSize = True
-        Me.Label10.Location = New System.Drawing.Point(20, 37)
+        Me.Label10.Location = New System.Drawing.Point(20, 70)
         Me.Label10.Name = "Label10"
         Me.Label10.Size = New System.Drawing.Size(116, 13)
         Me.Label10.TabIndex = 12
@@ -303,7 +315,7 @@ Partial Class token
         Me.GroupBox2.Controls.Add(Me.Label9)
         Me.GroupBox2.Controls.Add(Me.LB_CLAVE_9)
         Me.GroupBox2.Controls.Add(Me.LB_CLAVE_10)
-        Me.GroupBox2.Location = New System.Drawing.Point(12, 12)
+        Me.GroupBox2.Location = New System.Drawing.Point(12, 44)
         Me.GroupBox2.Name = "GroupBox2"
         Me.GroupBox2.Size = New System.Drawing.Size(414, 387)
         Me.GroupBox2.TabIndex = 11
@@ -313,26 +325,257 @@ Partial Class token
         'Label11
         '
         Me.Label11.AutoSize = True
-        Me.Label11.Location = New System.Drawing.Point(299, 402)
+        Me.Label11.Location = New System.Drawing.Point(298, 19)
         Me.Label11.Name = "Label11"
         Me.Label11.Size = New System.Drawing.Size(91, 13)
         Me.Label11.TabIndex = 12
         Me.Label11.Text = "Siguiente cambio:"
         '
+        'GroupBox1
+        '
+        Me.GroupBox1.Controls.Add(Me.Label12)
+        Me.GroupBox1.Controls.Add(Me.Label13)
+        Me.GroupBox1.Controls.Add(Me.Label14)
+        Me.GroupBox1.Controls.Add(Me.Label15)
+        Me.GroupBox1.Controls.Add(Me.Label16)
+        Me.GroupBox1.Controls.Add(Me.Label17)
+        Me.GroupBox1.Controls.Add(Me.Label18)
+        Me.GroupBox1.Controls.Add(Me.Label19)
+        Me.GroupBox1.Controls.Add(Me.Label20)
+        Me.GroupBox1.Controls.Add(Me.Label21)
+        Me.GroupBox1.Controls.Add(Me.Label22)
+        Me.GroupBox1.Controls.Add(Me.Label23)
+        Me.GroupBox1.Controls.Add(Me.Label24)
+        Me.GroupBox1.Controls.Add(Me.Label25)
+        Me.GroupBox1.Controls.Add(Me.Label26)
+        Me.GroupBox1.Controls.Add(Me.Label27)
+        Me.GroupBox1.Controls.Add(Me.Label28)
+        Me.GroupBox1.Controls.Add(Me.Label29)
+        Me.GroupBox1.Controls.Add(Me.Label30)
+        Me.GroupBox1.Controls.Add(Me.Label31)
+        Me.GroupBox1.Location = New System.Drawing.Point(458, 44)
+        Me.GroupBox1.Name = "GroupBox1"
+        Me.GroupBox1.Size = New System.Drawing.Size(414, 387)
+        Me.GroupBox1.TabIndex = 22
+        Me.GroupBox1.TabStop = False
+        Me.GroupBox1.Text = "Claves:"
+        '
+        'Label12
+        '
+        Me.Label12.AutoSize = True
+        Me.Label12.Location = New System.Drawing.Point(20, 37)
+        Me.Label12.Name = "Label12"
+        Me.Label12.Size = New System.Drawing.Size(49, 13)
+        Me.Label12.TabIndex = 12
+        Me.Label12.Text = "Clave 11"
+        '
+        'Label13
+        '
+        Me.Label13.AutoSize = True
+        Me.Label13.Location = New System.Drawing.Point(20, 355)
+        Me.Label13.Name = "Label13"
+        Me.Label13.Size = New System.Drawing.Size(49, 13)
+        Me.Label13.TabIndex = 21
+        Me.Label13.Text = "Clave 20"
+        '
+        'Label14
+        '
+        Me.Label14.AutoSize = True
+        Me.Label14.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label14.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.Label14.Location = New System.Drawing.Point(234, 36)
+        Me.Label14.Name = "Label14"
+        Me.Label14.Size = New System.Drawing.Size(59, 15)
+        Me.Label14.TabIndex = 0
+        Me.Label14.Text = "Label14"
+        '
+        'Label15
+        '
+        Me.Label15.AutoSize = True
+        Me.Label15.Location = New System.Drawing.Point(20, 321)
+        Me.Label15.Name = "Label15"
+        Me.Label15.Size = New System.Drawing.Size(49, 13)
+        Me.Label15.TabIndex = 20
+        Me.Label15.Text = "Clave 19"
+        '
+        'Label16
+        '
+        Me.Label16.AutoSize = True
+        Me.Label16.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label16.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.Label16.Location = New System.Drawing.Point(234, 69)
+        Me.Label16.Name = "Label16"
+        Me.Label16.Size = New System.Drawing.Size(59, 15)
+        Me.Label16.TabIndex = 1
+        Me.Label16.Text = "Label16"
+        '
+        'Label17
+        '
+        Me.Label17.AutoSize = True
+        Me.Label17.Location = New System.Drawing.Point(20, 283)
+        Me.Label17.Name = "Label17"
+        Me.Label17.Size = New System.Drawing.Size(49, 13)
+        Me.Label17.TabIndex = 19
+        Me.Label17.Text = "Clave 18"
+        '
+        'Label18
+        '
+        Me.Label18.AutoSize = True
+        Me.Label18.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label18.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.Label18.Location = New System.Drawing.Point(234, 108)
+        Me.Label18.Name = "Label18"
+        Me.Label18.Size = New System.Drawing.Size(59, 15)
+        Me.Label18.TabIndex = 2
+        Me.Label18.Text = "Label18"
+        '
+        'Label19
+        '
+        Me.Label19.AutoSize = True
+        Me.Label19.Location = New System.Drawing.Point(20, 250)
+        Me.Label19.Name = "Label19"
+        Me.Label19.Size = New System.Drawing.Size(49, 13)
+        Me.Label19.TabIndex = 18
+        Me.Label19.Text = "Clave 17"
+        '
+        'Label20
+        '
+        Me.Label20.AutoSize = True
+        Me.Label20.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label20.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.Label20.Location = New System.Drawing.Point(234, 145)
+        Me.Label20.Name = "Label20"
+        Me.Label20.Size = New System.Drawing.Size(59, 15)
+        Me.Label20.TabIndex = 3
+        Me.Label20.Text = "Label20"
+        '
+        'Label21
+        '
+        Me.Label21.AutoSize = True
+        Me.Label21.Location = New System.Drawing.Point(20, 216)
+        Me.Label21.Name = "Label21"
+        Me.Label21.Size = New System.Drawing.Size(49, 13)
+        Me.Label21.TabIndex = 17
+        Me.Label21.Text = "Clave 16"
+        '
+        'Label22
+        '
+        Me.Label22.AutoSize = True
+        Me.Label22.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label22.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.Label22.Location = New System.Drawing.Point(234, 181)
+        Me.Label22.Name = "Label22"
+        Me.Label22.Size = New System.Drawing.Size(59, 15)
+        Me.Label22.TabIndex = 4
+        Me.Label22.Text = "Label22"
+        '
+        'Label23
+        '
+        Me.Label23.AutoSize = True
+        Me.Label23.Location = New System.Drawing.Point(20, 182)
+        Me.Label23.Name = "Label23"
+        Me.Label23.Size = New System.Drawing.Size(49, 13)
+        Me.Label23.TabIndex = 16
+        Me.Label23.Text = "Clave 15"
+        '
+        'Label24
+        '
+        Me.Label24.AutoSize = True
+        Me.Label24.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label24.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.Label24.Location = New System.Drawing.Point(234, 215)
+        Me.Label24.Name = "Label24"
+        Me.Label24.Size = New System.Drawing.Size(59, 15)
+        Me.Label24.TabIndex = 5
+        Me.Label24.Text = "Label24"
+        '
+        'Label25
+        '
+        Me.Label25.AutoSize = True
+        Me.Label25.Location = New System.Drawing.Point(20, 146)
+        Me.Label25.Name = "Label25"
+        Me.Label25.Size = New System.Drawing.Size(49, 13)
+        Me.Label25.TabIndex = 15
+        Me.Label25.Text = "Clave 14"
+        '
+        'Label26
+        '
+        Me.Label26.AutoSize = True
+        Me.Label26.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label26.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.Label26.Location = New System.Drawing.Point(234, 249)
+        Me.Label26.Name = "Label26"
+        Me.Label26.Size = New System.Drawing.Size(59, 15)
+        Me.Label26.TabIndex = 6
+        Me.Label26.Text = "Label26"
+        '
+        'Label27
+        '
+        Me.Label27.AutoSize = True
+        Me.Label27.Location = New System.Drawing.Point(20, 109)
+        Me.Label27.Name = "Label27"
+        Me.Label27.Size = New System.Drawing.Size(49, 13)
+        Me.Label27.TabIndex = 14
+        Me.Label27.Text = "Clave 13"
+        '
+        'Label28
+        '
+        Me.Label28.AutoSize = True
+        Me.Label28.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label28.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.Label28.Location = New System.Drawing.Point(234, 282)
+        Me.Label28.Name = "Label28"
+        Me.Label28.Size = New System.Drawing.Size(59, 15)
+        Me.Label28.TabIndex = 7
+        Me.Label28.Text = "Label28"
+        '
+        'Label29
+        '
+        Me.Label29.AutoSize = True
+        Me.Label29.Location = New System.Drawing.Point(20, 70)
+        Me.Label29.Name = "Label29"
+        Me.Label29.Size = New System.Drawing.Size(49, 13)
+        Me.Label29.TabIndex = 13
+        Me.Label29.Text = "Clave 12"
+        '
+        'Label30
+        '
+        Me.Label30.AutoSize = True
+        Me.Label30.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label30.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.Label30.Location = New System.Drawing.Point(234, 320)
+        Me.Label30.Name = "Label30"
+        Me.Label30.Size = New System.Drawing.Size(59, 15)
+        Me.Label30.TabIndex = 8
+        Me.Label30.Text = "Label30"
+        '
+        'Label31
+        '
+        Me.Label31.AutoSize = True
+        Me.Label31.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label31.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.Label31.Location = New System.Drawing.Point(234, 354)
+        Me.Label31.Name = "Label31"
+        Me.Label31.Size = New System.Drawing.Size(59, 15)
+        Me.Label31.TabIndex = 9
+        Me.Label31.Text = "Label31"
+        '
         'token
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(466, 422)
+        Me.ClientSize = New System.Drawing.Size(892, 446)
+        Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.Label11)
         Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.lbTimer)
-        Me.Controls.Add(Me.GroupBox1)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "token"
         Me.Text = "token"
         Me.GroupBox2.ResumeLayout(False)
         Me.GroupBox2.PerformLayout()
+        Me.GroupBox1.ResumeLayout(False)
+        Me.GroupBox1.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -349,7 +592,6 @@ Partial Class token
     Friend WithEvents LB_CLAVE_8 As Label
     Friend WithEvents LB_CLAVE_9 As Label
     Friend WithEvents LB_CLAVE_10 As Label
-    Friend WithEvents GroupBox1 As GroupBox
     Friend WithEvents lbTimer As Label
     Friend WithEvents TimerConteo As Timer
     Friend WithEvents Label1 As Label
@@ -364,4 +606,25 @@ Partial Class token
     Friend WithEvents Label10 As Label
     Friend WithEvents GroupBox2 As GroupBox
     Friend WithEvents Label11 As Label
+    Friend WithEvents GroupBox1 As GroupBox
+    Friend WithEvents Label12 As Label
+    Friend WithEvents Label13 As Label
+    Friend WithEvents Label14 As Label
+    Friend WithEvents Label15 As Label
+    Friend WithEvents Label16 As Label
+    Friend WithEvents Label17 As Label
+    Friend WithEvents Label18 As Label
+    Friend WithEvents Label19 As Label
+    Friend WithEvents Label20 As Label
+    Friend WithEvents Label21 As Label
+    Friend WithEvents Label22 As Label
+    Friend WithEvents Label23 As Label
+    Friend WithEvents Label24 As Label
+    Friend WithEvents Label25 As Label
+    Friend WithEvents Label26 As Label
+    Friend WithEvents Label27 As Label
+    Friend WithEvents Label28 As Label
+    Friend WithEvents Label29 As Label
+    Friend WithEvents Label30 As Label
+    Friend WithEvents Label31 As Label
 End Class
