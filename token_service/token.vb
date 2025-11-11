@@ -1,21 +1,74 @@
 ﻿
+Imports System.Data.SqlClient
+
 Public Class token
+
+    Dim bolConectado As Boolean = False
+    Dim milisegundos_minuto As Integer = 60000
+
 
     Private Sub token_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
         Call cambiar_claves()
 
-        TimerToken.Interval = 60000
+
+        Call cargar_conexion_archivo()
+
+        Me.lbSistema.Text = tipo_sistema
+
+
+
+        Call intentar_conexiones()
+
+        TimerToken.Interval = minutos_sincronizar * milisegundos_minuto  '60000 
         TimerToken.Start()
         TimerConteo.Start()
 
-        Call cargar_conexion_archivo()
+
 
 
 
     End Sub
 
+    Private Sub intentar_conexiones()
 
+        'conexion local
+        Try
+            Using cn As New SqlConnection(strSqlConectionString)
+                If cn.State <> ConnectionState.Open Then
+                    cn.Open()
+                End If
+                Me.lbConLocal.ForeColor = Color.Green
+                Me.lbConLocal.Text = "Conectado..."
+                bolConectado = True
+            End Using
+        Catch ex As Exception
+            Me.lbConLocal.ForeColor = Color.Red
+            Me.lbConLocal.Text = "Desconectado..."
+            bolConectado = False
+        End Try
+
+        If bolConectado = False Then
+            bolConectado = False
+            Exit Sub
+        End If
+        'conexion remota
+        Try
+            Using cn_host As New SqlConnection(strHostConnectionString)
+                If cn_host.State <> ConnectionState.Open Then
+                    cn_host.Open()
+                End If
+                Me.lbConRemota.ForeColor = Color.Green
+                Me.lbConRemota.Text = "Conectado..."
+            End Using
+        Catch ex As Exception
+            Me.lbConRemota.ForeColor = Color.Red
+            Me.lbConRemota.Text = "Desconectado..."
+        End Try
+
+
+
+    End Sub
 
     Private Sub TimerToken_Tick(sender As Object, e As EventArgs) Handles TimerToken.Tick
 
@@ -63,6 +116,8 @@ Public Class token
             Me.LB_CLAVE_9.Text = get_string_clave(clave_9)
             Me.LB_CLAVE_10.Text = get_string_clave(clave_10)
 
+            If bolConectado = False Then Exit Sub
+
             If update_clave_host(GlobalEmpnit, Me.LB_CLAVE_1.Text, Me.LB_CLAVE_2.Text, Me.LB_CLAVE_3.Text, Me.LB_CLAVE_4.Text, Me.LB_CLAVE_5.Text) = True Then
                 If update_clave_general(GlobalEmpnit, Me.LB_CLAVE_1.Text) = True Then
 
@@ -104,9 +159,9 @@ Public Class token
     Private Sub TimerConteo_Tick(sender As Object, e As EventArgs) Handles TimerConteo.Tick
 
         contador = contador + 1
-        Dim faltan As Integer = 60 - contador
+        Dim faltan As Integer = (minutos_sincronizar * 59) - contador
         Me.lbTimer.Text = faltan
-        If contador = 60 Then contador = 0
+        If contador = (minutos_sincronizar * 59) Then contador = 0
 
     End Sub
 

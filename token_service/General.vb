@@ -11,13 +11,16 @@ Module General
     Public strSqlConectionString As String = ""
     Public cn As New SqlConnection
 
-
+    Public tipo_sistema As String = ""
+    Public minutos_sincronizar As Integer = 0
 
     Public Sub cargar_conexion_archivo()
         Try
             Dim fic As String = Application.StartupPath + "\CONECTION.INI"
             Dim sr As New System.IO.StreamReader(fic)
 
+            tipo_sistema = sr.ReadLine
+            minutos_sincronizar = CType(sr.ReadLine, Integer)
             Dim sucursal As String = sr.ReadLine
             Dim server = sr.ReadLine()
             Dim dbs = sr.ReadLine()
@@ -42,11 +45,26 @@ Module General
 
         Dim r As Boolean
 
-        Dim qry As String = "
+        Dim qry As String = ""
+
+        If tipo_sistema = "ONNE" Then
+            qry = "
+                    UPDATE 
+                        COMMUNITY_EMPRESAS_SYNC
+                    SET
+                        TOKEN_CLAVE_1=@C,
+                        TOKEN_CLAVE_2=@C
+                    WHERE
+                        EMPNIT=@E
+            "
+        Else 'isc
+            qry = "
                 UPDATE 
                     TOKEN_CLAVES
                 SET CLAVE_1=@C1, CLAVE_2=@C2, CLAVE_3=@C3, CLAVE_4=@C4, CLAVE_5=@C5 
                 WHERE EMPNIT=@E"
+        End If
+
 
         Try
             Using cn_host As New SqlConnection(strHostConnectionString)
@@ -85,7 +103,13 @@ Module General
 
         Dim r As Boolean
 
-        Dim qry As String = "
+        Dim qry As String = ""
+
+        If tipo_sistema = "ONNE" Then
+            qry = "UPDATE CONFIG SET PASS=@C WHERE ID=2;"
+        Else
+            'ISC
+            qry = "
                 UPDATE 
                     EMPRESAS
                 SET 
@@ -119,6 +143,9 @@ Module General
                     CLAVERECFAC=@C 
                 WHERE 
                     EMP_NIT=@E"
+
+        End If
+
 
         Try
             Using cn As New SqlConnection(strSqlConectionString)

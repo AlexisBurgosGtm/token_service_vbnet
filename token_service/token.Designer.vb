@@ -70,8 +70,19 @@ Partial Class token
         Me.Label29 = New System.Windows.Forms.Label()
         Me.Label30 = New System.Windows.Forms.Label()
         Me.Label31 = New System.Windows.Forms.Label()
+        Me.Label32 = New System.Windows.Forms.Label()
+        Me.lbConLocal = New System.Windows.Forms.Label()
+        Me.Label33 = New System.Windows.Forms.Label()
+        Me.lbConRemota = New System.Windows.Forms.Label()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.Label34 = New System.Windows.Forms.Label()
+        Me.Label35 = New System.Windows.Forms.Label()
+        Me.lbSistema = New System.Windows.Forms.Label()
+        Me.Label36 = New System.Windows.Forms.Label()
+        Me.lbMinutos = New System.Windows.Forms.Label()
         Me.GroupBox2.SuspendLayout()
         Me.GroupBox1.SuspendLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'TimerToken
@@ -193,7 +204,7 @@ Partial Class token
         Me.lbTimer.AutoSize = True
         Me.lbTimer.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lbTimer.ForeColor = System.Drawing.Color.Red
-        Me.lbTimer.Location = New System.Drawing.Point(409, 19)
+        Me.lbTimer.Location = New System.Drawing.Point(617, 32)
         Me.lbTimer.Name = "lbTimer"
         Me.lbTimer.Size = New System.Drawing.Size(14, 13)
         Me.lbTimer.TabIndex = 11
@@ -315,7 +326,7 @@ Partial Class token
         Me.GroupBox2.Controls.Add(Me.Label9)
         Me.GroupBox2.Controls.Add(Me.LB_CLAVE_9)
         Me.GroupBox2.Controls.Add(Me.LB_CLAVE_10)
-        Me.GroupBox2.Location = New System.Drawing.Point(12, 44)
+        Me.GroupBox2.Location = New System.Drawing.Point(12, 106)
         Me.GroupBox2.Name = "GroupBox2"
         Me.GroupBox2.Size = New System.Drawing.Size(414, 387)
         Me.GroupBox2.TabIndex = 11
@@ -325,7 +336,7 @@ Partial Class token
         'Label11
         '
         Me.Label11.AutoSize = True
-        Me.Label11.Location = New System.Drawing.Point(298, 19)
+        Me.Label11.Location = New System.Drawing.Point(508, 32)
         Me.Label11.Name = "Label11"
         Me.Label11.Size = New System.Drawing.Size(91, 13)
         Me.Label11.TabIndex = 12
@@ -353,7 +364,7 @@ Partial Class token
         Me.GroupBox1.Controls.Add(Me.Label29)
         Me.GroupBox1.Controls.Add(Me.Label30)
         Me.GroupBox1.Controls.Add(Me.Label31)
-        Me.GroupBox1.Location = New System.Drawing.Point(458, 44)
+        Me.GroupBox1.Location = New System.Drawing.Point(458, 106)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Size = New System.Drawing.Size(414, 387)
         Me.GroupBox1.TabIndex = 22
@@ -560,11 +571,122 @@ Partial Class token
         Me.Label31.TabIndex = 9
         Me.Label31.Text = "Label31"
         '
+        'Label32
+        '
+        Me.Label32.AutoSize = True
+        Me.Label32.Location = New System.Drawing.Point(747, 30)
+        Me.Label32.Name = "Label32"
+        Me.Label32.Size = New System.Drawing.Size(79, 13)
+        Me.Label32.TabIndex = 24
+        Me.Label32.Text = "Conexion local:"
+        '
+        'lbConLocal
+        '
+        Me.lbConLocal.AutoSize = True
+        Me.lbConLocal.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbConLocal.ForeColor = System.Drawing.Color.DodgerBlue
+        Me.lbConLocal.Location = New System.Drawing.Point(858, 30)
+        Me.lbConLocal.Name = "lbConLocal"
+        Me.lbConLocal.Size = New System.Drawing.Size(14, 13)
+        Me.lbConLocal.TabIndex = 23
+        Me.lbConLocal.Text = "0"
+        '
+        'Label33
+        '
+        Me.Label33.AutoSize = True
+        Me.Label33.Location = New System.Drawing.Point(747, 52)
+        Me.Label33.Name = "Label33"
+        Me.Label33.Size = New System.Drawing.Size(89, 13)
+        Me.Label33.TabIndex = 26
+        Me.Label33.Text = "Conexion remota:"
+        '
+        'lbConRemota
+        '
+        Me.lbConRemota.AutoSize = True
+        Me.lbConRemota.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbConRemota.ForeColor = System.Drawing.Color.DodgerBlue
+        Me.lbConRemota.Location = New System.Drawing.Point(858, 52)
+        Me.lbConRemota.Name = "lbConRemota"
+        Me.lbConRemota.Size = New System.Drawing.Size(14, 13)
+        Me.lbConRemota.TabIndex = 25
+        Me.lbConRemota.Text = "0"
+        '
+        'PictureBox1
+        '
+        Me.PictureBox1.Image = Global.token_service.My.Resources.Resources.INFERNO
+        Me.PictureBox1.Location = New System.Drawing.Point(12, 3)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(107, 97)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox1.TabIndex = 27
+        Me.PictureBox1.TabStop = False
+        '
+        'Label34
+        '
+        Me.Label34.AutoSize = True
+        Me.Label34.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label34.ForeColor = System.Drawing.Color.Red
+        Me.Label34.Location = New System.Drawing.Point(129, 25)
+        Me.Label34.Name = "Label34"
+        Me.Label34.Size = New System.Drawing.Size(79, 20)
+        Me.Label34.TabIndex = 28
+        Me.Label34.Text = "TOKENS"
+        '
+        'Label35
+        '
+        Me.Label35.AutoSize = True
+        Me.Label35.Location = New System.Drawing.Point(324, 30)
+        Me.Label35.Name = "Label35"
+        Me.Label35.Size = New System.Drawing.Size(47, 13)
+        Me.Label35.TabIndex = 30
+        Me.Label35.Text = "Sistema:"
+        '
+        'lbSistema
+        '
+        Me.lbSistema.AutoSize = True
+        Me.lbSistema.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbSistema.ForeColor = System.Drawing.Color.Red
+        Me.lbSistema.Location = New System.Drawing.Point(377, 30)
+        Me.lbSistema.Name = "lbSistema"
+        Me.lbSistema.Size = New System.Drawing.Size(42, 13)
+        Me.lbSistema.TabIndex = 29
+        Me.lbSistema.Text = "ONNE"
+        '
+        'Label36
+        '
+        Me.Label36.AutoSize = True
+        Me.Label36.Location = New System.Drawing.Point(324, 52)
+        Me.Label36.Name = "Label36"
+        Me.Label36.Size = New System.Drawing.Size(47, 13)
+        Me.Label36.TabIndex = 32
+        Me.Label36.Text = "Minutos:"
+        '
+        'lbMinutos
+        '
+        Me.lbMinutos.AutoSize = True
+        Me.lbMinutos.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbMinutos.ForeColor = System.Drawing.Color.Fuchsia
+        Me.lbMinutos.Location = New System.Drawing.Point(377, 52)
+        Me.lbMinutos.Name = "lbMinutos"
+        Me.lbMinutos.Size = New System.Drawing.Size(21, 13)
+        Me.lbMinutos.TabIndex = 31
+        Me.lbMinutos.Text = "60"
+        '
         'token
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(892, 446)
+        Me.ClientSize = New System.Drawing.Size(947, 509)
+        Me.Controls.Add(Me.Label36)
+        Me.Controls.Add(Me.lbMinutos)
+        Me.Controls.Add(Me.Label35)
+        Me.Controls.Add(Me.lbSistema)
+        Me.Controls.Add(Me.Label34)
+        Me.Controls.Add(Me.PictureBox1)
+        Me.Controls.Add(Me.Label33)
+        Me.Controls.Add(Me.lbConRemota)
+        Me.Controls.Add(Me.Label32)
+        Me.Controls.Add(Me.lbConLocal)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.Label11)
         Me.Controls.Add(Me.GroupBox2)
@@ -576,6 +698,7 @@ Partial Class token
         Me.GroupBox2.PerformLayout()
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -627,4 +750,14 @@ Partial Class token
     Friend WithEvents Label29 As Label
     Friend WithEvents Label30 As Label
     Friend WithEvents Label31 As Label
+    Friend WithEvents Label32 As Label
+    Friend WithEvents lbConLocal As Label
+    Friend WithEvents Label33 As Label
+    Friend WithEvents lbConRemota As Label
+    Friend WithEvents PictureBox1 As PictureBox
+    Friend WithEvents Label34 As Label
+    Friend WithEvents Label35 As Label
+    Friend WithEvents lbSistema As Label
+    Friend WithEvents Label36 As Label
+    Friend WithEvents lbMinutos As Label
 End Class

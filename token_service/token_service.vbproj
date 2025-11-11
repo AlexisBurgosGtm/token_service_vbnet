@@ -127,6 +127,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="INFERNO.ico" />
+    <None Include="Resources\INFERNO.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>
