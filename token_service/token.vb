@@ -26,10 +26,15 @@ Public Class token
         TimerToken.Start()
         TimerConteo.Start()
 
+        'Me.WindowState = FormWindowState.Minimized
+        Me.Visible = False
 
 
 
-
+    End Sub
+    Private Sub NotifyIcon1_DoubleClick(sender As Object, e As EventArgs) Handles NotifyIcon1.DoubleClick
+        'Me.WindowState = FormWindowState.Maximized
+        Me.Visible = True
     End Sub
 
     Private Sub intentar_conexiones()
@@ -166,7 +171,6 @@ Public Class token
         If contador = (minutos_sincronizar * 59) Then contador = 0
 
     End Sub
-
 
 
 
