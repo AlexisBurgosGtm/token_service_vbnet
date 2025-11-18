@@ -9,16 +9,18 @@ Public Class token
 
     Private Sub token_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
-        Call cambiar_claves()
 
 
         Call cargar_conexion_archivo()
 
         Me.lbSistema.Text = tipo_sistema
-
+        Me.lbMinutos.Text = minutos_sincronizar
 
 
         Call intentar_conexiones()
+
+        Call cambiar_claves()
+
 
         TimerToken.Interval = minutos_sincronizar * milisegundos_minuto  '60000 
         TimerToken.Start()

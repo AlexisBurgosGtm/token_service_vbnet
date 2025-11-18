@@ -52,8 +52,11 @@ Module General
                     UPDATE 
                         COMMUNITY_EMPRESAS_SYNC
                     SET
-                        TOKEN_CLAVE_1=@C,
-                        TOKEN_CLAVE_2=@C
+                        TOKEN_CLAVE_1=@C1,
+                        TOKEN_CLAVE_2=@C2,
+                        TOKEN_CLAVE_3=@C3,
+                        TOKEN_CLAVE_4=@C4,
+                        TOKEN_CLAVE_5=@C5
                     WHERE
                         EMPNIT=@E
             "
@@ -89,6 +92,7 @@ Module General
 
             End Using
         Catch ex As Exception
+            MsgBox(ex.ToString)
             r = False
         End Try
 
